@@ -29,6 +29,6 @@ streamlit run app.py
 - 5 pytest tests passed!
 
 ## 👨‍💻 Author
-J. Dharun Vishnu — Future CISO 🎯
+J. Dharun Vishnu — Future AI Engineer 🎯
 
 *"Dedication and love are stronger than any degree"*
