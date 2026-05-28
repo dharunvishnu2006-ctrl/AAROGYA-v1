@@ -31,4 +31,4 @@ streamlit run app.py
 ## 👨‍💻 Author
 J. Dharun Vishnu — Future AI Engineer 🎯
 
-*"Dedication and love are stronger than any degree"*
+
