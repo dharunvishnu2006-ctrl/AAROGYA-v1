@@ -29,6 +29,6 @@ streamlit run app.py
 - 5 pytest tests passed!
 
 ## 👨‍💻 Author
-J. Dharun Vishnu — Future AI Engineer 🎯
+J. Dharun Vishnu — Future AI/ML + Cyber Security Engineer 🎯
 
 
