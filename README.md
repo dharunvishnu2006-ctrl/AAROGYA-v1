@@ -1,10 +1,8 @@
-# 🏥 AAROGYA v1 — India Health Analytics
+# 🏥 AAROGYA v1 — AI-Powered Hospital Platform
 
 [![Python](https://img.shields.io/badge/Python-3.14-blue?style=for-the-badge&logo=python)]()
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.57-red?style=for-the-badge&logo=streamlit)]()
-[![Pytest](https://img.shields.io/badge/Tests-5%20Passed-green?style=for-the-badge&logo=pytest)]()
-
-> Inspired by ABDM — Ayushman Bharat Digital Mission 🇮🇳
+[![Pytest](https://img.shields.io/badge/Tests-5%20Passed-green?style=for-the-badge&logo=pytest)
 
 ## 🚀 Live Demo
 👉 [Click Here](https://aarogya-v1-nqmatcmqp2xqc2xbqtuu57.streamlit.app/)
