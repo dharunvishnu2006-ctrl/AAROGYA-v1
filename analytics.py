@@ -1,20 +1,33 @@
 import pandas as pd
 
+from clinical_config import (
+    BMI_UNDERWEIGHT,
+    BMI_OVERWEIGHT,
+    BMI_OBESITY,
+    BP_DIASTOLIC_HIGH,
+    BP_SYSTOLIC_HIGH,
+    FASTING_SUGAR_DIABETES,
+)
+
+
 def calc_avg_bmi(df):
     return {
-        'mean': round(df['bmi'].mean(),2),
-        'min': round(df['bmi'].min(),2),
-        'max': round(df['bmi'].max(),2)
+        'mean': round(df['bmi'].mean(), 2),
+        'min': round(df['bmi'].min(), 2),
+        'max': round(df['bmi'].max(), 2)
     }
 
+
 def calc_median_bp(df):
-    return{
+    return {
         'systolic_median': round(
-            df['bp_systolic'].median(), 2),
+            df['bp_systolic'].median(), 2
+        ),
         'diastolic_median': round(
-            df['bp_diastolic'].median(), 2)
-        
+            df['bp_diastolic'].median(), 2
+        )
     }
+
 
 def calc_std_sugar(df):
     return {
@@ -22,19 +35,25 @@ def calc_std_sugar(df):
         'std': round(df['sugar_fasting'].std(), 2)
     }
 
-def score_patient_risk(patient):
+
+def score_patient_risk(patient) -> str:
     risk_score = 0
 
-    if patient.bmi > 30:
+    if patient.bmi >= BMI_OBESITY.value:
         risk_score += 1
-    if patient.bp_systolic > 140:
+
+    if (
+        patient.bp_systolic >= BP_SYSTOLIC_HIGH.value
+        or patient.bp_diastolic >= BP_DIASTOLIC_HIGH.value
+    ):
         risk_score += 1
-    if patient.sugar_fasting > 126:
+
+    if patient.sugar_fasting >= FASTING_SUGAR_DIABETES.value:
         risk_score += 1
 
     if risk_score == 0:
-        return 'Low'
+        return "Low"
     elif risk_score == 1:
-        return 'Medium'
+        return "Medium"
     else:
-        return 'High'            
+        return "High"
