@@ -1,0 +1,3 @@
+| Feature | Twin | What I retrieved | What I looked up | Rung | Note |
+| --- | --- | --- | --- | --- | --- |
+| A1: Centralized clinical thresholds | AutoPilot ML X config | Frozen dataclass pattern for immutable application constants; decoupling domain thresholds from scoring logic | WHO adult hypertension guidelines (140/90 mmHg) and ADA fasting glucose criteria (126 mg/dL) | 1 | Retrieved structure and clinical rules quickly; needed rung 1 nudges on circular rationale wording, missing import in `analytics.py`, and fixing boundary comparisons from `>` to `>=`. |
