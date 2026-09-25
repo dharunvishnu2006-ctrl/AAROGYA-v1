@@ -1,0 +1,1 @@
+Known Limit (A3): Correction via bulk CSV upload is deliberately unsupported. All patient corrections must proceed through correct_patient_vital to ensure mandatory clinical justification, field-level diffing, and append-only audit preservation. Duplicate IDs during CSV upload are skipped and reported.
